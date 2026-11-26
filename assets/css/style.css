@@ -17,3 +17,113 @@ img{background:linear-gradient(135deg,#f0f7f9,#fff)}
 img.image-fallback{object-fit:contain!important;padding:22px;background:linear-gradient(135deg,#eaf5f8,#fff)}
 @keyframes pageProductFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 @media(max-width:700px){.page-hero-split{grid-template-columns:1fr!important;gap:20px;padding-right:7vw!important;padding-bottom:28px!important}.page-hero-split .crumb,.page-hero-split h1,.page-hero-split>p:not(.image-note){grid-column:1}.page-hero-visual{grid-column:1;grid-row:auto;min-height:210px;height:210px;max-height:210px}.page-hero-visual img{height:190px;width:70%}.page-hero-split .image-note{position:static;grid-column:1!important;margin:0!important}}
+
+
+/* HYDRO PLUS — premium visual refresh */
+:root{--navy:#041f36;--blue:#087eae;--cyan:#66dce7;--ink:#102c40;--muted:#647d8e;--pale:#eff8fb;--line:#dcebf1}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff}
+.site-header{height:84px;padding-inline:clamp(22px,6vw,96px);border-bottom:1px solid #e9f1f4;box-shadow:0 8px 32px #052b4510}
+.brand{letter-spacing:1.35px}.brand-mark{width:46px;height:46px;border-radius:15px;background:linear-gradient(145deg,#12b8d0,#073b66);box-shadow:0 9px 22px #0788ad38}
+.site-header nav{gap:clamp(13px,2vw,28px);font-size:12px}.nav-cta{border-radius:999px;padding:14px 21px;background:linear-gradient(110deg,#073b66,#087eae);box-shadow:0 7px 18px #087eae24}
+.hp-hero{min-height:720px;height:min(820px,calc(100vh - 84px));background:#041f36;isolation:isolate}
+.hp-hero:before{background:linear-gradient(90deg,#031a2cf5 0%,#052b46e8 42%,#073c5c91 100%);z-index:-1}
+.hp-hero:after{content:"";position:absolute;inset:0;z-index:-2;background-image:var(--hp-slide-bg,linear-gradient(120deg,#062a46,#0b7295));background-size:cover;background-position:center;opacity:.34;transform:scale(1.04);transition:opacity .8s,transform 7s ease}
+.hp-hero.slide-changing:after{opacity:.12;transform:scale(1)}
+.hp-hero-bg{opacity:.23;background-image:radial-gradient(#b8f4f8 1px,transparent 1px);background-size:27px 27px}
+.hp-slide{padding:56px clamp(24px,8.5vw,140px) 105px;grid-template-columns:1.05fr .95fr;gap:2vw}
+.hp-hero h1{font-size:clamp(52px,6.5vw,94px);letter-spacing:-5px;line-height:.99}
+.hp-hero h1 i{color:#73e5ec}
+.hp-kicker{color:#91edf0;letter-spacing:3px}
+.hp-hero-copy>p{font-size:15px;max-width:500px;color:#d1e5ed}
+.hp-btn{border-radius:999px;padding:16px 24px;letter-spacing:.2px}
+.hp-btn-white{box-shadow:0 10px 25px #0002}.hp-btn-outline{backdrop-filter:blur(10px);background:#ffffff12}
+.hp-product-stage{height:560px}
+.hp-product-stage>img{width:min(76%,450px);height:480px;filter:drop-shadow(0 38px 42px #001522a8)}
+.hp-product-glow{width:450px;height:450px;background:radial-gradient(circle,#56e0e966 0%,#1688b433 43%,transparent 72%)}
+.hp-orbit{border-color:#a7eaf344}.orbit-one{width:520px;height:285px}.orbit-two{width:600px;height:370px}
+.hp-float-chip{border-radius:999px;background:#ffffff16;border-color:#b7edf34d;box-shadow:0 12px 30px #001b2d2b}
+.hp-hero-controls{bottom:54px;left:clamp(24px,8.5vw,140px)}
+.hp-arrow{width:42px;height:42px;border-color:#ffffff55}.hp-arrow:hover{background:#73e5ec;color:#042b45}
+.hp-dots button{height:4px;border-radius:8px}.hp-dots button.active{background:#73e5ec}
+.hp-bottom-note{right:clamp(24px,8.5vw,140px);bottom:66px;gap:25px}
+.hp-bottom-note span{font-size:9px;letter-spacing:1.5px;color:#c5dce7}
+.hp-proof{padding:26px clamp(24px,8.5vw,140px);background:#f4fafc;gap:25px}
+.hp-proof>div{gap:14px}.hp-proof b{color:#0b8eb8;font-size:25px}.hp-proof span{font-size:12px;color:#49677a}
+.hp-section,.hp-service-section,.hp-how{padding:clamp(70px,8vw,118px) clamp(24px,8.5vw,140px)}
+.hp-section-heading{margin-bottom:48px}.hp-section-heading h2,.hp-story h2,.hp-how h2,.hp-contact h2{font-size:clamp(38px,4.4vw,60px);letter-spacing:-2.6px;line-height:1.08}
+.hp-section-heading h2 em,.hp-story h2 em,.hp-how h2 em{color:#0788b5}
+.hp-section-heading>p{max-width:430px;font-size:13px;line-height:1.9}
+.hp-price-grid{gap:24px}
+.hp-price-card{border:1px solid #e0edf2;border-radius:18px;padding:18px;box-shadow:0 12px 38px #063b5510;transition:transform .35s,box-shadow .35s}
+.hp-price-card:hover{transform:translateY(-9px);box-shadow:0 22px 48px #063b5520}
+.hp-price-card img{height:270px;border-radius:12px;background:linear-gradient(145deg,#f6fbfd,#eaf5f8);padding:15px}
+.hp-price-card h3{font-size:26px}.hp-price-card>div b{font-size:27px}
+.hp-price-card.featured{border-color:#7bd5e2;box-shadow:0 18px 45px #0a91b51c}
+.hp-price-card>a{display:inline-flex;margin-top:12px;padding:11px 16px;border-radius:99px;background:#eaf7fa;color:#087da8}
+.hp-story{padding:clamp(70px,8vw,118px) clamp(24px,8.5vw,140px);gap:clamp(35px,7vw,100px);background:linear-gradient(180deg,#fff,#f4fafc)}
+.hp-story-image{border-radius:24px;overflow:hidden;box-shadow:0 25px 70px #052c4530;min-height:480px}
+.hp-story-image>img{width:100%;height:100%;min-height:480px;object-fit:cover}
+.hp-image-stamp{border-radius:16px;backdrop-filter:blur(14px);box-shadow:0 12px 35px #00233b35}
+.hp-story-copy p,.hp-story-copy li{font-size:14px;line-height:1.9}
+.hp-service-section{background:#f3f9fb}
+.hp-service-grid{gap:18px}
+.hp-service-card{border:1px solid #e1edf2;border-radius:16px;padding:28px;background:#fff;box-shadow:0 8px 28px #0a456509;transition:transform .3s,box-shadow .3s}
+.hp-service-card:hover{transform:translateY(-7px);box-shadow:0 20px 42px #0a45651a}
+.hp-service-icon{width:56px;height:56px;border-radius:17px;background:linear-gradient(145deg,#e4f8fb,#c9edf3);color:#087eae;display:grid;place-items:center;font-size:26px}
+.hp-service-card h3{font-size:19px}.hp-service-card p{font-size:12px;line-height:1.8}
+.hp-how{background:#062e4d;color:white}
+.hp-how h2 em{color:#74e2e9}
+.hp-steps>div{border-top:1px solid #ffffff2b;padding-top:25px}.hp-steps b{color:#78e1e8;font-size:28px}
+.hp-contact{padding:clamp(60px,7vw,95px) clamp(24px,8.5vw,140px);background:linear-gradient(120deg,#052c49,#087ca5);border-radius:0}
+.hp-contact h2{color:white}.hp-contact p{color:#d3e8f0}.hp-contact h2 em{color:#7de8ec}
+.hp-contact-actions .hp-btn{border-radius:999px}
+footer{padding:48px clamp(24px,8.5vw,140px);background:#031e34}
+.float-whatsapp{background:#16b96c;box-shadow:0 10px 28px #063b5545}
+.chat-launch{background:#087eae;box-shadow:0 10px 28px #063b5545}
+.page-hero{background:linear-gradient(105deg,#031e35f2,#075e84c9),url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=85') center/cover}
+.page-hero h1{letter-spacing:-2.8px}.page-hero:after{border-color:#a8f1f333;box-shadow:0 0 0 40px #ffffff0a,0 0 0 80px #ffffff07}
+.section{padding:clamp(65px,8vw,110px) clamp(24px,8.5vw,140px)}
+.product-card{border-radius:16px;overflow:hidden;box-shadow:0 12px 35px #0a45650b}
+.product-card:hover{transform:translateY(-8px);box-shadow:0 22px 45px #0a45651b}
+.product-image{height:285px;background:linear-gradient(145deg,#f6fbfd,#e6f3f7)}
+.product-image img{padding:20px}
+.product-info{padding:25px}
+.product-info h3{font-size:25px}
+.product-info .btn,.contact-form .btn,.service-detail .btn{border-radius:999px}
+.info-card{border-radius:16px;padding:32px}
+.detail-photo{border-radius:18px;box-shadow:0 18px 45px #052c4515}
+.contact-form{border-radius:18px;padding:36px;box-shadow:0 18px 50px #052c4510}
+.contact-form input,.contact-form textarea,.contact-form select{border-radius:9px;padding:15px}
+.faq-list details{padding:23px 0}.faq-list summary{font-size:15px}
+.reveal{transform:translateY(25px);transition:opacity .7s,transform .7s}.reveal.visible{transform:none}
+@media(max-width:900px){.hp-slide{padding-inline:6vw;gap:0}.hp-product-stage{height:460px}.hp-product-stage>img{height:400px}.hp-proof{padding-inline:6vw}.hp-bottom-note{right:6vw}.hp-hero-controls{left:6vw}}
+@media(max-width:680px){
+.site-header{height:72px;padding:0 19px}.site-header nav{top:72px}
+.hp-hero{height:760px;min-height:760px}
+.hp-slide{grid-template-columns:1fr;grid-template-rows:auto 1fr;padding:72px 7vw 115px;align-content:start}
+.hp-hero-copy{max-width:100%}.hp-hero h1{font-size:clamp(47px,13vw,66px);letter-spacing:-3px;margin:20px 0 15px}
+.hp-hero-copy>p{font-size:13px;line-height:1.7;max-width:100%}
+.hp-actions{margin-top:20px;gap:9px}.hp-btn{padding:14px 17px;font-size:10px}
+.hp-slide-caption{margin-top:24px;font-size:8px}
+.hp-product-stage{height:285px;margin-top:0;transform:translateY(5px) scale(.9)}
+.hp-product-stage>img{width:64%;height:265px}
+.hp-product-glow{width:260px;height:260px}.orbit-one{width:290px;height:160px}.orbit-two{width:330px;height:210px}
+.hp-float-chip{font-size:7px;padding:9px 11px}.chip-top{top:25px;right:0}.chip-bottom{bottom:30px;left:0}
+.hp-hero-controls{bottom:24px;left:7vw;gap:10px}.hp-arrow{width:34px;height:34px}
+.hp-slide-number{font-size:10px}.hp-bottom-note{display:none}
+.hp-proof{grid-template-columns:1fr 1fr;padding:23px 7vw;gap:18px}.hp-proof b{font-size:20px}.hp-proof span{font-size:10px}
+.hp-section,.hp-service-section,.hp-how,.hp-story{padding:70px 7vw}
+.hp-section-heading{display:block}.hp-section-heading>p{margin-top:18px}
+.hp-section-heading h2,.hp-story h2,.hp-how h2,.hp-contact h2{font-size:39px;letter-spacing:-1.8px}
+.hp-price-grid{grid-template-columns:1fr;gap:17px}.hp-price-card img{height:245px}
+.hp-story{grid-template-columns:1fr;gap:30px}.hp-story-image,.hp-story-image>img{min-height:330px}
+.hp-service-grid{grid-template-columns:1fr 1fr;gap:12px}.hp-service-card{padding:19px}.hp-service-card h3{font-size:16px}.hp-service-card p{font-size:11px}
+.hp-steps{grid-template-columns:1fr 1fr;gap:25px}
+.hp-contact{display:block;padding:60px 7vw}.hp-contact-actions{margin-top:28px}
+.section{padding:65px 7vw}.product-grid,.content-grid{grid-template-columns:1fr}.product-image{height:250px}
+.service-detail{grid-template-columns:1fr;gap:22px;margin-bottom:48px}.service-detail:nth-child(even) .detail-photo{order:0}
+.detail-photo{height:270px}.contact-form{padding:22px}.contact-layout{gap:28px}
+.page-hero{padding:80px 7vw 70px}.page-hero h1{font-size:46px}
+footer{padding:40px 7vw}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
