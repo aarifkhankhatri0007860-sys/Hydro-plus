@@ -17,3 +17,127 @@ img{background:linear-gradient(135deg,#f0f7f9,#fff)}
 img.image-fallback{object-fit:contain!important;padding:22px;background:linear-gradient(135deg,#eaf5f8,#fff)}
 @keyframes pageProductFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 @media(max-width:700px){.page-hero-split{grid-template-columns:1fr!important;gap:20px;padding-right:7vw!important;padding-bottom:28px!important}.page-hero-split .crumb,.page-hero-split h1,.page-hero-split>p:not(.image-note){grid-column:1}.page-hero-visual{grid-column:1;grid-row:auto;min-height:210px;height:210px;max-height:210px}.page-hero-visual img{height:190px;width:70%}.page-hero-split .image-note{position:static;grid-column:1!important;margin:0!important}}
+
+
+/* HYDRO PLUS — NATURAL PREMIUM REFRESH (preserves existing components) */
+:root{--navy:#123c59;--blue:#1685ae;--cyan:#79cbd5;--ink:#18364a;--muted:#718391;--pale:#f3f9fb;--line:#e5edf1}
+body{color:var(--ink);background:#fff}
+.site-header{height:76px;padding-inline:clamp(20px,5.5vw,84px);background:rgba(255,255,255,.96);backdrop-filter:blur(14px);box-shadow:0 3px 18px #163b4d0b}
+.brand-mark{border-radius:12px;box-shadow:none;background:linear-gradient(145deg,#4db8c6,#14577a)}
+.site-header nav{gap:clamp(14px,2vw,28px);font-size:12px}
+.nav-cta{border-radius:30px;padding:12px 18px;background:#174d6b}
+.hp-hero{height:min(700px,calc(100vh - 76px));min-height:590px;background:#f4fafc;color:#173b53}
+.hp-hero:before{background:linear-gradient(90deg,#f7fbfcf5 0%,#f5fafbf0 43%,#eaf5f7b8 100%);z-index:0}
+.hp-hero-bg{opacity:.14;background-image:radial-gradient(#5e9eae 1px,transparent 1px);z-index:0}
+.hp-slide{padding:48px clamp(24px,8vw,120px) 86px;z-index:1}
+.hp-slide:before{content:"";position:absolute;inset:0;background-image:var(--slide-image);background-position:center;background-size:cover;opacity:.12;z-index:-1;pointer-events:none}
+.hp-hero-copy{max-width:560px}
+.hp-kicker,.hp-eyebrow{color:#238ba7;letter-spacing:2.1px}
+.hp-hero h1{color:#173d56;font-size:clamp(48px,5.7vw,76px);letter-spacing:-3.8px}
+.hp-hero h1 i{color:#279ab0}
+.hp-hero-copy>p{color:#607887;font-size:14px;max-width:450px}
+.hp-btn{border-radius:30px;padding:15px 21px}
+.hp-btn-white{background:#174d6b;color:#fff;box-shadow:0 8px 22px #174d6b20}
+.hp-btn-outline{border-color:#9bbbc8;color:#24566e;background:#ffffff9c}
+.hp-slide-caption{color:#7794a3;margin-top:48px}
+.hp-product-stage{height:490px;transform:translateX(12px) scale(.97)}
+.hp-product-stage:after{content:"";position:absolute;width:min(440px,80%);height:390px;border-radius:48% 52% 45% 55%;background:linear-gradient(145deg,#e1f2f5,#f7fbfc 70%);box-shadow:inset 0 0 0 1px #d9e9ed;transform:rotate(-8deg)}
+.hp-product-stage>img{z-index:2;width:min(76%,420px);height:420px;filter:drop-shadow(0 22px 25px #24485b25)}
+.hp-product-glow{background:radial-gradient(circle,#8bd7df50 0%,#b7e3e933 48%,transparent 72%)}
+.hp-orbit{border-color:#69b6c32c}
+.hp-float-chip{background:#ffffffd9;border:1px solid #d7e8ed;color:#376477;backdrop-filter:blur(10px);box-shadow:0 8px 22px #173f5510;border-radius:30px}
+.hp-hero-controls{left:clamp(24px,8vw,120px);bottom:57px}
+.hp-arrow{border-color:#b7ccd4;color:#28556c}
+.hp-arrow:hover{background:#174d6b;color:white}
+.hp-dots button{background:#b4cbd2}
+.hp-dots button.active{background:#238eaa}
+.hp-slide-number{color:#78909c}
+.hp-slide-number b{color:#174d6b}
+.hp-bottom-note{border-color:#dbe8ed;color:#6f8996;background:#ffffffa8;padding-inline:clamp(24px,8vw,120px)}
+.hp-proof{background:#f4f9fa;padding:22px clamp(24px,8vw,120px)}
+.hp-proof b{color:#278da7;font-size:20px}
+.hp-proof span{color:#607b89}
+.hp-section{padding:clamp(68px,8vw,104px) clamp(24px,8vw,120px)}
+.hp-section-heading h2,.hp-story h2,.hp-how h2,.hp-contact h2{color:#173d56}
+.hp-section-heading h2 em,.hp-story h2 em,.hp-how h2 em{color:#268fa8}
+.hp-section-heading>p{color:#718491}
+.hp-price-card{border:1px solid #e4edf0;border-radius:12px;padding:17px 18px 22px;box-shadow:0 6px 22px #153d5008}
+.hp-price-card:hover{box-shadow:0 16px 34px #153d5014;transform:translateY(-4px)}
+.hp-price-card.featured{border-color:#b9dce2;box-shadow:0 9px 28px #2a819512}
+.hp-price-card img{border-radius:8px;background:#f5f9fa}
+.hp-price-card>label{border-radius:0 8px 0 8px;background:#287f99}
+.hp-price-card h3{color:#173d56}
+.hp-story{padding:clamp(68px,8vw,100px) clamp(24px,8vw,120px);background:#f5f9fa;gap:clamp(30px,6vw,80px)}
+.hp-story-image{border-radius:18px;overflow:hidden;box-shadow:0 15px 40px #173d5014}
+.hp-story-image img{object-fit:cover}
+.hp-image-stamp{border-radius:12px;background:#fff;color:#174d6b;box-shadow:0 8px 22px #173d5020}
+.hp-story-copy p,.hp-story-copy li{color:#667d8a}
+.hp-service-section{padding:clamp(68px,8vw,100px) clamp(24px,8vw,120px)}
+.hp-service-card{border:1px solid #e5edf0;border-radius:12px;background:#fff;box-shadow:0 5px 18px #163d5008;padding:25px;transition:transform .28s,box-shadow .28s}
+.hp-service-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px #163d5012}
+.hp-service-icon{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#edf7f8;color:#238ba5}
+.hp-service-card h3{color:#183e55}
+.hp-service-card p{color:#748692}
+.hp-service-card>b{color:#2087a1}
+.hp-how{padding:75px clamp(24px,8vw,120px);background:#f4f9fa}
+.hp-how h2{color:#173d56}
+.hp-steps>div{border-top:1px solid #dce8ec}
+.hp-steps b{color:#278da7}
+.hp-steps h3{color:#234b62}
+.hp-steps p{color:#758894}
+.hp-contact{margin:0 clamp(18px,4vw,56px) 36px;padding:clamp(36px,5vw,64px);border-radius:18px;background:linear-gradient(115deg,#164d6a,#267f96);box-shadow:0 15px 35px #174d6b18}
+.hp-contact h2{color:#fff}
+.hp-contact h2 em{color:#a8e7e7}
+.hp-contact p,.hp-contact .hp-eyebrow{color:#d4edf0}
+.hp-contact .hp-btn-white{background:#fff;color:#174d6b}
+.hp-contact .hp-btn-outline{border-color:#ffffff85;color:#fff;background:#ffffff0c}
+footer{background:#123e59;padding:38px clamp(24px,8vw,120px)}
+.float-whatsapp{box-shadow:0 8px 20px #0c553a28}
+.page-hero{background:linear-gradient(115deg,#f1f8fa,#e7f3f6);color:#173d56;padding:78px clamp(24px,8vw,120px) 68px}
+.page-hero:after{border-color:#9dcbd433;box-shadow:0 0 0 40px #9dcbd412,0 0 0 80px #9dcbd40a}
+.page-hero .crumb{color:#328aa2}
+.page-hero h1{color:#173d56}
+.page-hero p{color:#667e8c}
+.page-hero h1 em{color:#268fa8}
+.detail-photo,.page-hero-visual{border-radius:14px}
+.detail-photo img{object-fit:cover}
+.info-card{border-radius:12px;box-shadow:0 5px 18px #163d5007}
+.gold-line{background:#7dc7cf}
+.faq-list details{padding:22px 0}
+.faq-list summary{color:#1d435a}
+.contact-form{border-radius:14px}
+@media(max-width:900px){.hp-hero{height:auto;min-height:650px}.hp-slide{padding-inline:6vw}.hp-product-stage{height:390px}.hp-product-stage>img{height:340px}.hp-proof{padding-inline:6vw}}
+@media(max-width:680px){
+.site-header{height:68px}.site-header nav{top:68px}
+.hp-hero{height:auto;min-height:700px}
+.hp-slide{grid-template-columns:1fr;grid-template-rows:auto 250px;align-content:center;gap:0;padding:40px 7vw 96px}
+.hp-hero h1{font-size:48px;letter-spacing:-2.5px;margin:18px 0}
+.hp-hero-copy>p{font-size:13px;line-height:1.7}
+.hp-slide-caption{margin-top:23px}
+.hp-product-stage{height:245px;transform:none}
+.hp-product-stage:after{height:210px;width:75%}
+.hp-product-stage>img{height:235px;width:68%}
+.hp-orbit.orbit-one{width:290px;height:155px}.hp-orbit.orbit-two{width:320px;height:190px}
+.hp-float-chip{font-size:7px;padding:8px 10px}.chip-top{top:14px;right:4%}.chip-bottom{bottom:12px;left:2%}
+.hp-hero-controls{left:7vw;bottom:52px}
+.hp-bottom-note{padding:12px 7vw;font-size:7px;letter-spacing:1px}
+.hp-proof{grid-template-columns:1fr 1fr;gap:16px;padding:20px 7vw}
+.hp-section-heading{display:block}.hp-section-heading>p{margin-top:16px}
+.hp-price-grid{grid-template-columns:1fr;gap:15px}
+.hp-price-card{display:grid;grid-template-columns:112px 1fr;column-gap:15px;align-items:center;padding:14px}
+.hp-price-card img{grid-row:1 / span 4;height:130px}
+.hp-price-card>span,.hp-price-card h3,.hp-price-card>div,.hp-price-card>a{grid-column:2}
+.hp-price-card>label{font-size:7px}
+.hp-story{grid-template-columns:1fr}
+.hp-story-image{min-height:250px}
+.hp-service-grid{grid-template-columns:1fr 1fr;gap:12px}
+.hp-service-card{padding:17px}
+.hp-service-card h3{font-size:14px}
+.hp-service-card p{font-size:11px}
+.hp-how{padding:60px 7vw}
+.hp-steps{grid-template-columns:1fr 1fr;gap:20px}
+.hp-contact{margin:0 12px 22px;padding:32px 24px;border-radius:14px}
+.hp-contact-actions{align-items:stretch}
+.page-hero{padding:58px 7vw 48px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
